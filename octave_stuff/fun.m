@@ -1,0 +1,12 @@
+function [result, original] = fun(input_vector);
+original = result = [];
+min = -5;
+max = 5;
+for i = input_vector;
+noise = min .+ (max .- min) .* rand;
+output = i + 1;
+output_noise = output + noise;
+result(end + 1) = output_noise;
+original(end + 1) = output;
+end;
+end;
