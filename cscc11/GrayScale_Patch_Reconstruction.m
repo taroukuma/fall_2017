@@ -70,7 +70,7 @@ P=[XX(:) YY(:)]';
 Z=patch(:);
 
 % Solve for the weights of the RBF model
-[w]=TrainRBFRegression(Z,P,C,SIGMA);
+[w]=TrainRBFRegression_regularized(Z,P,C,SIGMA,1.5);
 
 % Evaluate model to reconstruct patch
 [zp]=evalRBFModel(w,P,C,SIGMA);
