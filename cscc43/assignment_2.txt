@@ -1,0 +1,45 @@
+A)
+1. Pianos (the individual instruments)
+2. Piano models
+3. Piano designers
+4. Technicians
+5. Inspection record
+
+B)
+1. Pianos: serial number, manufacturing date.
+2. Piano models: identification number, name.
+3. Piano designers: certification number.
+4. Technicians: employee number, role.
+5. Inspection record: date of the inspection, quality evaluation grade.
+
+C)
+1. Pianos: serial number.
+2. Piano models: identification number.
+3. Piano designers: certification number.
+4. Technicians: employee number.
+
+D)
+1. A piano must have only one piano model.
+2. A piano must have at least two inspections.
+3. A piano must have at least two technicians that checked it.
+3. A piano model may have any number of pianos.
+4. A piano model must have only one designer.
+5. A designer many have many piano models.
+6. An inspection must involve only one piano.
+7. An inspection must involve only one technician.
+8. A technician may check any number of pianos.
+9. A technician may perform many inspections.
+10. A technician must have another techinician supervising him.
+
+E)
+Binary relationships:
+1. Piano - Piano model.
+2. Piano model - Designer.
+
+Ternary relationships:
+1. Piano - Inspection - Techinicians.
+
+Unary relationships:
+1. Technicians.
+
+
