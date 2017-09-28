@@ -69,5 +69,9 @@
 
 function [z]=evalRBFModel(w,P,C,sigma)
 
-  z=zeros(size(P,2),1);   % Replace this with your code to evaluate output values
-  
+  R = [];
+for m = [1: size(C, 2)];
+R = [R, rbf2d(P, C(:, m), sigma)];
+end;
+R(:, size(R, 2) + 1) = 1;
+z = R * w;
