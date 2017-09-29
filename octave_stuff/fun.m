@@ -1,12 +1,8 @@
-function [result, original] = fun(input_vector);
-original = result = [];
-min = -5;
-max = 5;
-for i = input_vector;
-noise = min .+ (max .- min) .* rand;
-output = i + 1;
-output_noise = output + noise;
-result(end + 1) = output_noise;
-original(end + 1) = output;
+function result = fun(image);
+original = imread(image);
+result = zeros(size(original, 1), size(original, 2));
+for i = [1: size(original, 3)];
+result = result + original(:, :, i);
 end;
+imshow(result);
 end;
