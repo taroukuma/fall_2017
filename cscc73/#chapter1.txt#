@@ -1,0 +1,8 @@
+what are algorithms?
+- They are procedures that are precise, unambiguous, mechanical, and correct?
+What is a recurrence relation?
+- it is when you have an equation for a sequence of elements where the nth element is defined as it predecessors.
+Big O notation:
+- it is a function of input size (what exactly is this?) that tells us the number of basic computer steps.
+- i,e., f: N -> R
+
