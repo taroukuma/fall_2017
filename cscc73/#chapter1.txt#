@@ -1,8 +1,49 @@
+Prologue:
 what are algorithms?
-- They are procedures that are precise, unambiguous, mechanical, and correct?
+- they are procedures that are precise, unambiguous, mechanical, and correct?
 What is a recurrence relation?
 - it is when you have an equation for a sequence of elements where the nth element is defined as it predecessors.
 Big O notation:
 - it is a function of input size (what exactly is this?) that tells us the number of basic computer steps.
 - i,e., f: N -> R
+What are we interested in an algorithm?
+- is it correct?
+- how long does it take?
+- can we do better?
 
+Chapter1: Number algorithms
+The interesting aspect of two problems:
+- expressing a natural number in terms of its prime factors -----> apparently the take it takes to do this is exponential in terms of the number of bits of N. (i,e., veeeery long time)
+- telling whether a natural number is a prime -----> this can be done very efficiently.
+- this apparently is very useful for many security applications.
+
+The various interpretations of log N (base is assumed to be 2 since O(log N) covers all the bases):
+- number of times 2 should be multiplied by itself to get N.
+- number of times N should be halfed to get 1.
+- number of bits required to represent N (log (N + 1) ceiling).
+- depth of a complete binary search tree with nodes N.
+- the sum 1 + 1/2 + 1/3 + 1/4 + ..... + 1/N.
+
+An interesting theorm about the universe of numbers:
+- sum of three one digit numbers of any base is always two digits.
+- this result allows us to do addition for any base.
+
+This allows us to analyze the running time of the addition of two numbers:
+- c0 + c1*n or O(n)
+
+Multiplication analysis:
+- multiplying and dividing by a power of a base is the same as left and right shifting.
+- performing multiplication like we usually do take about O(n^2) time.
+
+Alkhwarizmi's multiplication algorithm: (not sure how this works)
+- x * y = 2 * (x/2 * y) + x
+
+Modulo arithmetic:
+- helps us when we are working with large numbers of limited ranges. ex: 203 - 310. what is the best way of representing this?. we can use mod(203)?
+- in this sense, two numbers are equivalent if their difference is a multiple of the modulo.
+- it is like a hand of the clock.
+- it is like extendting a limited sequence of numbers to a large number of numbers by making numbers equivalent.
+- the direction is reversed for the negative numbers?
+- we can use substitution of equivalent numbers in a modulo system to do addition and multiplication.
+- this modular equality applies for associativity, commutavity, and distributavitiy.
+- 

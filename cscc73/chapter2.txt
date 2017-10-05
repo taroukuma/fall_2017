@@ -1,0 +1,16 @@
+Divide and Conquer:
+It involves us doing three things:
+- divide the problem into subproblems of the same type. this is where we need to come up with a smart way of dividing the problem.
+- recursively dividing the problem into a number of small problems allows us to solve those small ones very easily.
+- the other smart comes when we have to glue these solutions for the small problems into a solution for the big original problem.
+
+Gaussian multiplication of complex numbers:
+- instead of doing four real multiplications, we can do this in three and four additional (additions or subtractions).
+
+Why is being able to do this with three multiplications instead of four significant
+- we can apply this technique to solving a real multiplication more efficiently.
+- infact, it reduces the running time from O(n^2) to O(n^1.59).
+
+
+
+
